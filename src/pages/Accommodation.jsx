@@ -16,7 +16,7 @@ export function Accomodation(){
 
   if (!logement) return <NotFound/>;
     return (
-    <div>
+     <div>
         <h1>{logement.title}</h1>
         <p>{logement.description}</p>
     </div>

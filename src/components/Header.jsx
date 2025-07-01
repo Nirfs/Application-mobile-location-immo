@@ -9,7 +9,7 @@ export function Header(){
         <header>
             <img className="desktop" src={logo} alt='logo de kasa'/>
             <nav>
-                <NavLink className="link" to='/'>Acceuil</NavLink>
+                <NavLink className="link" to='/'>Accueil</NavLink>
                 <NavLink className="link" to='/about'>A Propos</NavLink>
             </nav>
         </header>
