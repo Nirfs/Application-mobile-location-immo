@@ -1,0 +1,20 @@
+// Colors style
+$primary-color: #ff6060;
+$secondary-color: #ffffff;
+$text-color: #000000;
+$background-color-dark:$text-color;
+$background-color-light:$secondary-color;
+$background-color-grey:#F6F6F6;
+
+//Text style
+$font-family: "Montserrat", sans-serif;
+
+$font-size-very-small: 0.625em; // 10px
+$font-size-small: 0.875em; // 14px
+$font-size-base: 1.125em; // 18px
+$font-size-small-title: 1.5em; //24px
+$font-size-big-title: 2.25em; //36px
+
+//BreackPoint
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
