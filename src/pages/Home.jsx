@@ -1,3 +1,9 @@
+import { SubHeader } from "../components/SubHeader";
+import cliff from '../assets/sub_header_cliff.webp'
 export function Home() {
-  return <h1>Accueil</h1>;
+  return (
+    <div>
+      <SubHeader srcImage={cliff} alt="image d'une falaise"  text="Chez vous, partout et ailleurs"/>
+    </div>
+  )
 }
