@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color-dark;
+    color: $secondary-color;
+    padding: 40px 0 20px 0;
+    gap: 30px;
+
+    @include breakpoint(mobile){
+        font-size: $font-size-very-small-title;
+        p{
+            width: 20%;
+        }
+    }
+}
