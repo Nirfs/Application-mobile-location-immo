@@ -13,14 +13,15 @@ export function Card(){
   }, []);
 
   return(
-    <Link className='annonce-container'>
+    <div className='annonce-container'>
         {annonces.map(annonce => 
-        <div key={annonce.id} className='card'>
-            <img src={annonce.cover} alt={annonce.title}/>
-            <figcaption>{annonce.title}</figcaption>
-
-        </div>
+        <Link to={`/logement/${annonce.id}`} key={annonce.id}>
+          <div key={annonce.id} className='card'>
+              <img src={annonce.cover} alt={annonce.title}/>
+              <figcaption>{annonce.title}</figcaption>
+          </div>
+        </Link>
         )}
-    </Link>
+    </div>
   )
 }
