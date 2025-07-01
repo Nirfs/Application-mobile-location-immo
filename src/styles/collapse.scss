@@ -1,0 +1,44 @@
+@import './variables';
+@import './mixins';
+.collapse-container{
+    margin: 20px 9%;
+    .button-container {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        font-size: $font-size-small-title;
+        font-weight: $bold;
+
+        i {
+            transition: transform .2s ease-in-out;
+            transform: rotate(0deg);
+        }
+
+        i.open {
+            transform: rotate(-180deg);
+        }
+    }
+
+    .text {    
+        position: relative;
+        z-index: 10;
+        padding: 10px;
+        height: 0;
+        transform: translateY(-50px);
+        opacity: 0;
+        overflow:visible;
+        transition: height 200ms linear, transform 200ms linear, opacity 200ms linear;
+        font-size: $font-size-base;
+    }
+    .text.open {
+        height: 100px;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
